@@ -1,4 +1,4 @@
-### SEBR0429
+### SEBR0916
 
 
 # JavaScript Data Types
@@ -80,8 +80,82 @@ For this lesson, and class as a whole, we'll want to write a lot of notes in our
 Enter this into your code, you'll see that while it is in the file, it does not display on our output:
 
 ```js
-//Working with the Number datatypes
+//Working with  JS datatypes
 ```
+
+![String](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FoOaLz1eUyMb4Y%2Fgiphy.gif&f=1&nofb=1)
+
+### String Data Type
+
+Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
+
+There are **three** ways to write a string in JavaScript.
+1. Surround a word or phrase with double quotes, 
+```
+"like this"
+```
+2. Surround a word or phrase with single quotes, 
+```
+'like this'
+```
+3. Surround a word or phrase with backticks (below the tilde key), 
+```
+`like this`
+```
+
+This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."** (which we'll get to shortly).
+
+#### String helper methods
+
+To find the length of a string, access its [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
+
+```js
+'hello'.length;
+=> 5
+```
+
+There's our first brush with JavaScript objects! Did I mention that you can use strings like objects, too?
+
+Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well that allow you to manipulate the string and access information about the string:
+
+```js
+'hello'.charAt(0);
+=> "h"
+
+'hello, world'.replace('hello', 'goodbye');
+=> "goodbye, world"
+
+'hello'.toUpperCase();
+=> "HELLO"
+```
+
+Types of values like `Number` or `String` are not very useful without being able to form **Expressions** or **Combinations**.
+
+Try your favorite number operators as expressions:
+
+```javascript
+  1 + 1
+  => 2
+  2 - 1
+  => 1
+```
+
+You can also create expressions with strings using the addition operator:
+
+```javascript
+  'Hello, ' + 'world!'
+  => "Hello, world!"
+```
+
+This is called **String Concatentation**.
+
+> Note: the 'plus' binary operator is said to be "**overloaded**"— meaning that it behaves differently depending on what's on either side of it.
+> Consider the following expressions. What do they output, and why?
+> `1 + 2 + '3'` vs `'1' + 2 + 3`
+
+
+
+
 
 ### The Number Data Type
 
@@ -179,76 +253,6 @@ Math.round(3.14)
 Math.round(3.9999)
 => 4
 ```
-
-![String](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FoOaLz1eUyMb4Y%2Fgiphy.gif&f=1&nofb=1)
-
-### String Data Type
-
-Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
-
-There are **three** ways to write a string in JavaScript.
-1. Surround a word or phrase with double quotes, 
-```
-"like this"
-```
-2. Surround a word or phrase with single quotes, 
-```
-'like this'
-```
-3. Surround a word or phrase with backticks (below the tilde key), 
-```
-`like this`
-```
-
-This last version, with backticks, allows you to inject javascript into a string using something called **"string interpolation."** (which we'll get to shortly).
-
-#### String helper methods
-
-To find the length of a string, access its [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
-
-```js
-'hello'.length;
-=> 5
-```
-
-There's our first brush with JavaScript objects! Did I mention that you can use strings like objects, too?
-
-Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well that allow you to manipulate the string and access information about the string:
-
-```js
-'hello'.charAt(0);
-=> "h"
-
-'hello, world'.replace('hello', 'goodbye');
-=> "goodbye, world"
-
-'hello'.toUpperCase();
-=> "HELLO"
-```
-
-Types of values like `Number` or `String` are not very useful without being able to form **Expressions** or **Combinations**.
-
-Try your favorite number operators as expressions:
-
-```javascript
-  1 + 1
-  => 2
-  2 - 1
-  => 1
-```
-
-You can also create expressions with strings using the addition operator:
-
-```javascript
-  'Hello, ' + 'world!'
-  => "Hello, world!"
-```
-
-This is called **String Concatentation**.
-
-> Note: the 'plus' binary operator is said to be "**overloaded**"— meaning that it behaves differently depending on what's on either side of it.
-> Consider the following expressions. What do they output, and why?
-> `1 + 2 + '3'` vs `'1' + 2 + 3`
 
 
 
